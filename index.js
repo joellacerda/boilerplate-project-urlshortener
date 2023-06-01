@@ -51,7 +51,7 @@ app.post("/api/shorturl", async function (req, res) {
   // check if the url is valid
   if (!validUrl.isWebUri(url)) {
     res.status(400).json({
-      error: "Invalid URL",
+      error: "invalid url",
     });
   } else {
     try {
